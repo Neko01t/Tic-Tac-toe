@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Tic-Tac-Toe_asset/Logo.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <audio id="click-sound" src="Tic-Tac-Toe_asset/Sounds/click.wav"></audio>
+    <audio id="win-sound" src="Tic-Tac-Toe_asset/Sounds/victory.wav"></audio>
+    <button class="button"><a href="index.html">back</a></button>
+    <main class="onplay">
+        <h2 class="main_play_heading">Play</h2>
+        <div class="play_buttons">
+            <div class="vsBot">
+                <button onclick="playClickSound()" aria-label="Play against BOT" class="button pvpbutton"><a
+                        href="#">BOT</a></button>
+            </div>
+            <div class="dash"></div>
+            <div class="vsPlayer">
+                <button onclick="playClickSound()" aria-label="Play blind lol" class="button pvpbutton"><a
+                        href="pvp.html">PVP</a></button>
+            </div>
+            <div class="dash"></div>
+        </div>
+        <div class="design"></div>
+    </main>
+    <div style="color: black;">VS AI not work under devlopment choose pvp :]</div>
+</body>
+
+</html>

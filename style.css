@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 1000;
+    padding: 0;
+    margin: 0;
+    color: hsl(28.92deg 47.43% 65.69%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.design {
+    background-color: rgb(101 64 83);
+    height: 70px;
+    width: 100%;
+}
+
+.tep {
+    position: relative;
+    left: 25%;
+}
+
+body {
+    background-color: rgb(226, 195, 195);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_menu {
+    box-sizing: border-box;
+    background-color: hsl(2.4deg 30.12% 51.18%);
+    /* color: hsl(28.92deg 47.43% 65.69%); */
+    margin: 20px;
+    width: 310px;
+    height: 440px;
+    /* padding: 20px; */
+    border: 4px solid rgb(101 64 83);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    border: 0px;
+    background-color: rgb(101 64 83);
+    padding: 0px 10px 0px 10px;
+    margin: 2px;
+    text-align: center;
+    height: 26px;
+    transition: transform 500ms;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.dash {
+    border: 1px solid rgb(101 64 83);
+    margin-bottom: 8px;
+}
+
+.end_of_main_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 0px;
+}
+
+.big_dash {
+    background-color: hsl(2.4deg 30.12% 51.18%);
+    width: 45%;
+    border: 1.9px solid;
+}
+
+/* play.html ke css */
+.onplay {
+    background-color: hsl(2.4deg 30.12% 51.18%);
+    border: 4px solid rgb(101 64 83);
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_play_heading {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(101, 64, 83);
+    width: 95%;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2.3px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(2.4deg 30.12% 51.18%);
+    /* border: 2px solid #333; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 40px;
+}
+
+#cell-0 {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#cell-1 {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+}
+
+#cell-2 {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+}
+
+#cell-3 {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+
+#cell-4 {
+    border: 2px solid;
+}
+
+#cell-5 {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#cell-6 {
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
+
+#cell-7 {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
+
+#cell-8 {
+    border-left: 2px solid;
+    border-top: 2px solid;
+}
+
+.status {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.pvpbutton {
+    padding-right: 20px;
+    padding-left: 17px;
+}
+
+button::after {
+    background-color: hsl(2.4deg 30.12% 51.18%);
+}
+
+button:hover::after {
+    background-color: hsl(2.4deg 30.12% 51.18%);
+}

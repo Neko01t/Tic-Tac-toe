@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Tic-Tac-Toe_asset/Logo.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <audio id="click-sound" src="Tic-Tac-Toe_asset/Sounds/click.wav"></audio>
+    <audio id="win-sound" src="Tic-Tac-Toe_asset/Sounds/victory.wav"></audio>
+
+    <main class="main_menu">
+        <div class="design">
+            <div class="design end_of_main_menu">
+                <div class="dot"></div>
+                <div class="big_dash"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div>
+            <h1>Tic Tac Toe</h1>
+            <h2 class="tep">X vs O</h2>
+        </div>
+        <nav class="menu_buttons">
+            <div class="play">
+                <button onclick="playClickSound()" class="button"><a href="play.html"
+                        aria-label="Play the game">Play</a></button>
+            </div>
+            <div class="dash"></div>
+            <div class="quit">
+                <button onclick="playClickSound()" class="button"><a href="#"
+                        aria-label="Quit the game">Quit</a></button>
+            </div>
+            <div class="dash"></div>
+        </nav>
+        <div class="design end_of_main_menu">
+            <div class="dot"></div>
+            <div class="big_dash"></div>
+            <div class="dot"></div>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
