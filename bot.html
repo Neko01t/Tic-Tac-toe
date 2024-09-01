@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Fixed typo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Tic-Tac-Toe_asset/Logo.png" type="image/x-icon">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <button class="button"><a href="play.html">back</a></button>
+    <div class="main_menu">
+        <div class="game-board">
+            <div class="row">
+                <div class="cell" id="cell-0"></div>
+                <div class="cell" id="cell-1"></div>
+                <div class="cell" id="cell-2"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-3"></div>
+                <div class="cell" id="cell-4"></div>
+                <div class="cell" id="cell-5"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-6"></div>
+                <div class="cell" id="cell-7"></div>
+                <div class="cell" id="cell-8"></div>
+            </div>
+        </div>
+        <button class="button" onclick="playClickSound()" id="restart">Restart </button>
+        <p class="status" id="status"> Player X's Turn </p>
+    </div>
+    <audio id="click-sound" src="Tic-Tac-Toe_asset/Sounds/click.wav"></audio>
+    <audio id="win-sound" src="Tic-Tac-Toe_asset/Sounds/victory.wav"></audio>
+    <script src="scriptBot.js"></script>
+</body>
+
+</html>
